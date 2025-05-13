@@ -61,7 +61,7 @@ export function HeroSection() {
 
             <div className="flex flex-wrap justify-center lg:justify-start gap-4">
               <Link
-                href="/signup"
+                href="/dashboard"
                 className="px-8 py-3 bg-gradient-to-r from-purple-600 to-blue-500 text-white font-medium rounded-lg hover:opacity-90 transition-opacity"
               >
                 Get Started Free
