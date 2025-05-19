@@ -23,7 +23,11 @@ const MCQQuestion = ({ questions, bankId }: MCQQuestionProps) => {
   const [timeRemaining, setTimeRemaining] = useState(600); // 10 minutes in seconds
   const [isTimeUp, setIsTimeUp] = useState(false);
   console.log(timeRemaining)
-setIsTimeUp(false)
+  
+  useEffect(()=>{
+
+    setIsTimeUp(false)
+  },[])
   // Initialize selected options array with nulls
   useEffect(() => {
     setSelectedOptions(new Array(questions.length).fill(null));
